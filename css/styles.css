@@ -11,30 +11,24 @@ body{
     margin: auto;
     border: 20px solid #ffffff;
     display: inline-block;
-    width: 40%;
+    width: 560px;
+    height: 200px;
     padding: 10px;
-    vertical-align: middle;
     
     /*width: 40%;
     */
 }
-.text_content{
-    text-align: center;
-    color: black;
+.column{
+    float: left;
     margin: auto;
-    border: 20px solid #ffffff;
-    display: inline-block;
-    width: 40%;
+    text-align: center;
+    width: 50%;
     padding: 10px;
-    vertical-align: middle;
-    
-    /*width: 40%;
-    */
 }
 .image img{
     width: 100%;
     vertical-align: middle;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .image{
     align-content: center;
@@ -42,11 +36,21 @@ body{
     width: 20%;
     vertical-align: middle;
 }
-.box_content{
-    text-align:center;
+
+.image_content img{
     margin-left: auto;
     margin-right: auto;
-    height:400px;
-    margin: auto;
-    padding: 100px ;
+    display: block;
 }
+.image_content{
+    width: 300px;
+}
+.box_content:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+  }
