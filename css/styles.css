@@ -14,17 +14,27 @@ body{
     width: 560px;
     height: 200px;
     padding: 10px;
-    
+    position: relative;
     /*width: 40%;
     */
 }
 .column{
     float: left;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     width: 50%;
-    padding: 10px;
+    padding-top: 150px;
+    padding-left: 150px;
 }
+
+.left {
+    width: 45%;
+  }
+  
+  .right {
+    width: 55;
+  }
+
 .image img{
     width: 100%;
     vertical-align: middle;
@@ -38,13 +48,44 @@ body{
 }
 
 .image_content img{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    /* margin-left: auto;
+    margin-right: auto;*/
+    /*margin: auto;*/
+    display: block; 
+    width: 100%;
+    height: auto;
 }
 .image_content{
-    width: 300px;
+    /* width: 300px; */
+    position: absolute;
 }
+
+.button {
+    border: none;
+    color: black;
+    padding: 15px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 10px;
+    cursor: pointer;
+    float: center;
+  }
+
+  .information_buttons:after {
+    content: "";
+    clear: both;
+
+    
+  }
+  .information_buttons{
+      width: 575px;
+  }
+
+  .button1 {background-color: rgb(251, 255, 4);}
+  .button2 {background-color: rgb(251, 255, 4);}
+
 .box_content:after{
     content: "";
     display: table;
@@ -53,4 +94,10 @@ body{
 
 * {
     box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }
