@@ -32,7 +32,8 @@ body{
   }
   
   .right {
-    width: 55;
+    width: 55%;
+    padding-top: 340px;
   }
 
 .image img{
@@ -58,6 +59,7 @@ body{
 .image_content{
     /* width: 300px; */
     position: absolute;
+    top: 180px;
 }
 
 .button {
@@ -73,9 +75,22 @@ body{
     float: center;
   }
 
+  .button_2 {
+    border: none;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 10px;
+    cursor: pointer;
+    float: center;
+  }
+
   .information_buttons:after {
     content: "";
-    clear: both;
+    clear: both ;
 
     
   }
@@ -83,8 +98,22 @@ body{
       width: 575px;
   }
 
+  .information_buttons_2:after {
+    content: "";
+    clear: both;
+
+    
+  }
+  .information_buttons_2{
+    padding-top: 180x;
+      width: 270px;
+  }
+
   .button1 {background-color: rgb(251, 255, 4);}
   .button2 {background-color: rgb(251, 255, 4);}
+
+  .button3 {background-color: rgb(255, 4, 171);}
+  .button4 {background-color: rgb(96, 185, 245);}
 
 .box_content:after{
     content: "";
